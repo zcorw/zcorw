@@ -18,6 +18,7 @@ AI语音对齐学习系统（TTS + STT）
 
 AI记账系统 + Telegram Bot
 → FastAPI / 数据建模 / 自动化流程
+
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=zcorw&repo=FlowLedger&show_owner=true)](https://github.com/zcorw/FlowLedger)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=zcorw&repo=FlowLedgerHTML&show_owner=true)](https://github.com/zcorw/FlowLedgerHTML)
 
