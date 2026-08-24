@@ -14,6 +14,22 @@ The first generation uses separate frontend and backend repositories. The backen
 
 The second generation redesigns the product around monthly asset snapshots, multi-currency valuation, liabilities, historical exchange rates, data import and export, automated testing, deployment, and backup workflows.
 
+- `flow-ledger-2` — second-generation full-stack redesign
+- `FlowLedger-ui` — first-generation React frontend
+- `FlowLedger-server` — first-generation API and Telegram Bot services
+
+**Stack:** React, TypeScript, FastAPI, PostgreSQL, SQLAlchemy, ECharts, Playwright, Docker
+
+---
+
+### PasswdMan
+
+A personal credential vault for storing, organizing, and searching passwords and secure notes, with import and export workflows for backup and migration.
+
+The first generation protects sensitive client–server communication with a hybrid protocol: per-session AES-CBC encryption and HMAC-SHA256 integrity protection, with the session key exchanged through RSA-OAEP.
+
+The second generation redesigns the communication layer around X25519 key agreement and AES-GCM authenticated encryption. It also introduces end-to-end encrypted vault synchronization, allowing the server to store and synchronize only encrypted vault data.
+
 - [`PasswdMan2`](https://github.com/Zcorw/PasswdMan2) — second-generation full-stack redesign in progress
 - [`PasswdMan-ui`](https://github.com/Zcorw/PasswdMan-ui) — first-generation Vue frontend
 - [`PasswdMan-server`](https://github.com/Zcorw/PasswdMan-server) — first-generation NestJS backend
@@ -34,21 +50,6 @@ The system separates the web quiz application, shared question bank, daily study
 - [`fe-daily-runner`](https://github.com/Zcorw/fe-daily-runner) — daily study content automation
 
 **Stack:** Next.js, React, TypeScript, FastAPI, SQLite, Telegram, Docker
-
----
-
-### FE Study System
-
-A multi-repository study platform for Japan’s Fundamental Information Technology Engineer Examination.
-
-The system separates the web quiz application, shared question bank, daily study automation, Telegram integration, and deployment responsibilities into independent components.
-
-- `fe-study-system` — system overview and integration
-- `fe-quiz-app` — web-based quiz application
-- `fe-question-bank-service` — shared question bank service
-- `fe-daily-runner` — daily study content automation
-
-**Stack:** Next.js, React, TypeScript, FastAPI, SQLite, Telegram, Docker, Nginx
 
 ---
 
