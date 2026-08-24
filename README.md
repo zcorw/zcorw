@@ -14,11 +14,11 @@ The first generation uses separate frontend and backend repositories. The backen
 
 The second generation redesigns the product around monthly asset snapshots, multi-currency valuation, liabilities, historical exchange rates, data import and export, automated testing, deployment, and backup workflows.
 
-- `flow-ledger-2` — second-generation full-stack redesign
-- `FlowLedger-ui` — first-generation React frontend
-- `FlowLedger-server` — first-generation API and Telegram Bot services
+- [`flow-ledger-2`](https://github.com/Zcorw/flow-ledger-2) — second-generation full-stack redesign
+- [`FlowLedger-ui`](https://github.com/Zcorw/FlowLedger-ui) — first-generation React frontend
+- [`FlowLedger-server`](https://github.com/Zcorw/FlowLedger-server) — first-generation API and Telegram Bot services
 
-**Stack:** React, TypeScript, FastAPI, PostgreSQL, SQLAlchemy, ECharts, Playwright, Docker
+**Stack:** React, TypeScript, FastAPI, PostgreSQL, SQLAlchemy, ECharts, Docker
 
 ---
 
@@ -34,7 +34,7 @@ The second generation redesigns the communication layer around X25519 key agreem
 - [`PasswdMan-ui`](https://github.com/Zcorw/PasswdMan-ui) — first-generation Vue frontend
 - [`PasswdMan-server`](https://github.com/Zcorw/PasswdMan-server) — first-generation NestJS backend
 
-**Stack:** Vue, React, TypeScript, NestJS, FastAPI, PostgreSQL, Docker
+**Stack:** Vue, React, TypeScript, NestJS, FastAPI, MySQL, PostgreSQL, PWA, Docker
 
 ---
 
@@ -49,7 +49,7 @@ The system separates the web quiz application, shared question bank, daily study
 - [`fe-question-bank-service`](https://github.com/Zcorw/fe-question-bank-service) — shared question bank service
 - [`fe-daily-runner`](https://github.com/Zcorw/fe-daily-runner) — daily study content automation
 
-**Stack:** Next.js, React, TypeScript, FastAPI, SQLite, Telegram, Docker
+**Stack:** Next.js, React, TypeScript, FastAPI, SQLite, Telegram, Docker, Nginx
 
 ---
 
