@@ -1,105 +1,103 @@
 # Zcorw
 
-Frontend-focused software engineer building full-stack web applications, developer tools, and automation systems.
+Frontend-focused software engineer working across web applications and Electron desktop clients.
 
-Primary areas include frontend architecture, API integration, system redesign, containerized deployment, and production-oriented engineering.
+My work centers on maintainable interfaces, reusable components, API integration, and system modernization. Personal projects extend this foundation into backend architecture, data modeling, and containerized deployment.
 
-## Selected Projects
+## Featured Work
 
-### FlowLedger
+### [PasswdMan](https://github.com/zcorw/PasswdMan2) — Application Design and Implementation
 
-A personal finance and asset-management project developed across two architectural generations.
+A personal credential vault for organizing passwords and secure notes, with search and import/export workflows for backup and migration.
 
-The first generation uses separate frontend and backend repositories. The backend provides both the Web API and Telegram Bot services.
+The first generation brings together frontend implementation, REST APIs, database design, authentication, and application-layer encryption. The second generation is a redesign in progress, revisiting the interface, security model, and application architecture in a single repository.
 
-The second generation redesigns the product around monthly asset snapshots, multi-currency valuation, liabilities, historical exchange rates, data import and export, automated testing, deployment, and backup workflows.
+| Generation | Architecture | Repositories |
+| --- | --- | --- |
+| v1 — original implementation | Vue 3 frontend, NestJS API, MySQL | [Frontend](https://github.com/zcorw/PasswdMan-ui) · [Backend](https://github.com/zcorw/PasswdMan-server) |
+| v2 — redesign in progress | React, FastAPI, PWA; frontend and backend in one repository | [PasswdMan2](https://github.com/zcorw/PasswdMan2) |
 
-- [`flow-ledger-2`](https://github.com/Zcorw/flow-ledger-2) — second-generation full-stack redesign
-- [`FlowLedger-ui`](https://github.com/Zcorw/FlowLedger-ui) — first-generation React frontend
-- [`FlowLedger-server`](https://github.com/Zcorw/FlowLedger-server) — first-generation API and Telegram Bot services
+**Engineering focus:** Authentication, sensitive-data handling, client–server integration, and architectural evolution.
 
-**Stack:** React, TypeScript, FastAPI, PostgreSQL, SQLAlchemy, ECharts, Docker
+**Technologies across generations:** Vue, React, TypeScript, NestJS, FastAPI, MySQL, PWA, Docker.
 
----
+### [Web Engineering Journey](https://github.com/zcorw/web-engineering-journey) — Technical Progression
 
-### PasswdMan
+A documented progression from browser and network fundamentals to reusable frontend abstractions, NestJS architecture, and full-stack systems.
 
-A personal credential vault for storing, organizing, and searching passwords and secure notes, with import and export workflows for backup and migration.
+Source-level experiments and linked projects connect implementation examples with changes in design and engineering approach. Larger applications retain their own repositories and Git history; this repository explains the relationships and lessons across them.
 
-The first generation protects sensitive client–server communication with a hybrid protocol: per-session AES-CBC encryption and HMAC-SHA256 integrity protection, with the session key exchanged through RSA-OAEP.
+**Progression:** Web fundamentals → reusable frontend engineering → backend architecture → full-stack systems.
 
-The second generation redesigns the communication layer around X25519 key agreement and AES-GCM authenticated encryption. It also introduces end-to-end encrypted vault synchronization, allowing the server to store and synchronize only encrypted vault data.
+[Frontend engineering](https://github.com/zcorw/web-engineering-journey/blob/main/docs/frontend-engineering.md) · [Backend architecture](https://github.com/zcorw/web-engineering-journey/blob/main/docs/backend-engineering.md) · [Technical timeline](https://github.com/zcorw/web-engineering-journey/blob/main/docs/timeline.md) · [Lessons learned](https://github.com/zcorw/web-engineering-journey/blob/main/docs/lessons-learned.md)
 
-- [`PasswdMan2`](https://github.com/Zcorw/PasswdMan2) — second-generation full-stack redesign in progress
-- [`PasswdMan-ui`](https://github.com/Zcorw/PasswdMan-ui) — first-generation Vue frontend
-- [`PasswdMan-server`](https://github.com/Zcorw/PasswdMan-server) — first-generation NestJS backend
+Earlier implementations are preserved as historical work, with their context and limitations documented rather than presented as current production recommendations.
 
-**Stack:** Vue, React, TypeScript, NestJS, FastAPI, MySQL, PostgreSQL, PWA, Docker
+## Additional Applications
 
----
+### [FlowLedger](https://github.com/zcorw/flow-ledger-2)
 
-### FE Study System
+A personal finance and asset-management application developed across two architectural generations. The second-generation redesign focuses on monthly asset snapshots, multi-currency valuation, liabilities, historical exchange rates, and data import/export and backup workflows.
 
-A multi-repository study platform for Japan’s Fundamental Information Technology Engineer Examination.
+**Distinctive focus:** Financial data modeling and valuation over time.
 
-The system separates the web quiz application, shared question bank, daily study automation, Telegram integration, and deployment responsibilities into independent components.
+**Repositories:** [v2 full-stack redesign](https://github.com/zcorw/flow-ledger-2) · [v1 frontend](https://github.com/zcorw/FlowLedger-ui) · [v1 API and Telegram bot](https://github.com/zcorw/FlowLedger-server).
 
-- [`fe-study-system`](https://github.com/Zcorw/fe-study-system) — system overview and integration
-- [`fe-quiz-app`](https://github.com/Zcorw/fe-quiz-app) — web-based quiz application
-- [`fe-question-bank-service`](https://github.com/Zcorw/fe-question-bank-service) — shared question bank service
-- [`fe-daily-runner`](https://github.com/Zcorw/fe-daily-runner) — daily study content automation
+**Stack:** React, TypeScript, FastAPI, PostgreSQL, SQLAlchemy, ECharts, Docker.
 
-**Stack:** Next.js, React, TypeScript, FastAPI, SQLite, Telegram, Docker, Nginx
+### [FE Study System](https://github.com/zcorw/fe-study-system)
 
----
+A multi-repository study platform for Japan’s Fundamental Information Technology Engineer Examination. The quiz application, shared question bank, daily study automation, and Telegram integration have separate responsibilities within the system.
 
-### [IPA Screenshot Exam Server](https://github.com/Zcorw/ipa-siken)
+**Distinctive focus:** Component boundaries, service integration, and study automation.
 
-A screenshot-based examination service built for archived IPA examination materials.
+**Repositories:** [System overview](https://github.com/zcorw/fe-study-system) · [Quiz application](https://github.com/zcorw/fe-quiz-app) · [Question bank](https://github.com/zcorw/fe-question-bank-service) · [Daily runner](https://github.com/zcorw/fe-daily-runner).
 
-The project stores exam metadata, question screenshots, and answer mappings in SQLite. Question pages are rendered directly from extracted image regions, avoiding a dependency on OCR-transcribed question text.
+**Stack:** Next.js, React, TypeScript, FastAPI, SQLite, Telegram, Docker, Nginx.
 
-It also includes tools for extracting question images from source PDFs, automated tests for data access and page rendering, Docker-based deployment, and Git LFS management for PDFs, screenshots, and SQLite data files.
+### [IPA Screenshot Exam Server](https://github.com/zcorw/ipa-siken)
 
-**Stack:** Node.js, SQLite, Python, HTML, CSS, Docker, Git LFS
+An examination service that presents questions from extracted regions of archived IPA exam PDFs rather than relying on OCR-transcribed text. SQLite stores exam metadata and answer mappings; extraction tools and Git LFS support the source PDFs, screenshots, and data files.
 
----
+**Distinctive focus:** Document-to-question workflows and image-based question presentation.
 
-### [AlignSpeak](https://github.com/Zcorw/AlignSpeak)
+**Stack:** Node.js, SQLite, Python, HTML, CSS, Docker, Git LFS.
 
-An AI-assisted reading and speaking practice application.
+### [AlignSpeak](https://github.com/zcorw/AlignSpeak)
 
-The project combines a React frontend, FastAPI backend, speech-processing workflows, and a containerized deployment structure in a single repository.
+An AI-assisted reading and speaking practice application, combining a React interface, FastAPI backend, speech-processing workflows, and containerized deployment in a single repository.
 
-**Stack:** React, TypeScript, Vite, FastAPI, PostgreSQL, Docker
+**Distinctive focus:** Language-learning interfaces and speech-processing integration.
+
+**Stack:** React, TypeScript, Vite, FastAPI, PostgreSQL, Docker.
+
+## Focused Engineering Examples
+
+### [Electron SQLCipher Demo](https://github.com/zcorw/electron-sqlcipher-demo)
+
+A minimal Windows x64 Electron example demonstrating encrypted local storage and persistence across application restarts. Database access stays in the main process, while the renderer uses a limited interface exposed through preload and `contextBridge`.
+
+**Scope:** A focused integration example, not a complete desktop client or production-grade key-management solution.
+
+**Stack:** Electron, Node.js, JavaScript, SQLCipher.
+
+[English documentation](https://github.com/zcorw/electron-sqlcipher-demo/blob/main/README-en.md)
 
 ## Core Technologies
 
-### Frontend
+Used across professional work, personal projects, and focused experiments; the project pages describe their specific scope.
 
-JavaScript, TypeScript, React, Vue, Next.js, Vite, Webpack, Material UI, Sass
-
-### Backend
-
-Node.js, NestJS, Express, Koa, Python, FastAPI, REST APIs
-
-### Desktop
-
-Electron
-
-### Data and Infrastructure
-
-PostgreSQL, MySQL, SQLite, Docker Compose, Nginx, Git LFS, CI/CD
-
-### Testing and Quality
-
-ESLint, Prettier, TypeScript
+| Area | Technologies |
+| --- | --- |
+| Frontend | JavaScript, TypeScript, React, Vue, Next.js, Vite, Webpack, Sass |
+| Desktop | Electron |
+| Backend | Node.js, NestJS, Express, Koa, Python, FastAPI, REST APIs |
+| Data and deployment | PostgreSQL, MySQL, SQLite, Docker Compose, Nginx, Git, Git LFS |
+| Code quality | TypeScript, ESLint, Prettier |
 
 ## Engineering Focus
 
-- Maintainable frontend architecture
-- Full-stack application development
-- API and service integration
-- Modernization of existing systems
-- Automated testing and quality gates
-- Containerized deployment and production operations
+- Maintainable frontend architecture and reusable abstractions.
+- API integration and clear boundaries between interfaces, services, and data.
+- Incremental modernization and architectural improvements to existing systems.
+- Containerized development and deployment, supported by practical documentation.
